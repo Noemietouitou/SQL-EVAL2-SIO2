@@ -3,7 +3,7 @@ Fiche Reponses:
 
 
 
-1. Trigger de Mise à Jour de la disponibilité des Voitures lors d'une Réservation
+1. ## Trigger de Mise à Jour de la disponibilité des Voitures lors d'une Réservation
 
    - Nom du Trigger : tr_update_disponibilite_voiture
    - Événement : AFTER INSERT sur la table Réservations
@@ -27,7 +27,7 @@ DELIMITER ;
 
 
 
-2. Trigger de Vérification de l'Âge du Client avant une Réservation
+2. ## Trigger de Vérification de l'Âge du Client avant une Réservation
 
    - Nom du Trigger : tr_verification_age_before_reservation
    - Événement : BEFORE INSERT sur la table Réservations
@@ -54,7 +54,7 @@ DELIMITER ;
    DELIMITER ;
 
 
-3. Trigger de Vérification de la Validité du Permis de Conduire avant la création d'un nouveau client
+3. ## Trigger de Vérification de la Validité du Permis de Conduire avant la création d'un nouveau client
    - Nom du Trigger : tr_verification_permis
    - Événement : BEFORE INSERT sur la table Clients
    - Objectif : Verifie l'existance, l'unicite et la validite du permis de conduire avant insertion du Client
@@ -87,7 +87,7 @@ DELIMITER ;
 
 
 
-4. Trigger de Vérification de la Disponibilité de la Voiture avant une Réservation
+4. ## Trigger de Vérification de la Disponibilité de la Voiture avant une Réservation
 
    - Nom du Trigger : tr_verification_disponibilite_voiture
    - Événement : BEFORE INSERT sur la table Réservations
@@ -118,7 +118,7 @@ DELIMITER ;
     DELIMITER ;
 
 
-5. Trigger pour Éviter les Chevauchements de Réservations sur la Même Voiture
+5. ## Trigger pour Éviter les Chevauchements de Réservations sur la Même Voiture
 
     - Nom du Trigger : tr_non_chevauchement
     - Événement : BEFORE INSERT sur la table Réservations
